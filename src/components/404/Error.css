@@ -1,0 +1,47 @@
+.error {
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: rgb(0, 4, 20);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error h1 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: rgb(0, 117, 255);
+}
+
+.error p {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.error__return {
+  background-color: rgb(0, 117, 255);
+  color: rgb(255, 255, 255);
+  border: 2.5px solid rgb(0, 4, 20);
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.error__return:hover {
+  border: 2.5px solid rgb(0, 117, 255);
+  background-color: rgb(0, 4, 20);
+}
+
+.error__return:active {
+  transform: scale(0.95);
+}

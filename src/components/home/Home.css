@@ -1,0 +1,89 @@
+.home {
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: rgb(0, 4, 20);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.home__nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.home__nav .home__nav__link:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+.home__nav__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.home__nav__link:hover {
+  color: rgb(0, 117, 255);
+}
+
+.home__nav__link:active {
+  transform: scale(0.95);
+}
+
+.home__content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.home__content__header p {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.home__content__header h2 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgb(0, 117, 255);
+}
+
+.home__content__slogan p {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.home__content__button {
+  background-color: rgb(0, 117, 255);
+  color: rgb(255, 255, 255);
+  border: 2.5px solid rgb(0, 4, 20);
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.home__content__button:hover {
+  border: 2.5px solid rgb(0, 117, 255);
+  background-color: rgb(0, 4, 20);
+}
+
+.home__content__button:active {
+  transform: scale(0.95);
+}

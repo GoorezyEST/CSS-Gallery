@@ -1,0 +1,112 @@
+.contact {
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: rgb(0, 4, 20);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.contact__nav .contact__nav__link:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+.contact__nav__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact__nav__link:hover {
+  color: rgb(0, 117, 255);
+}
+
+.contact__nav__link:active {
+  transform: scale(0.95);
+}
+
+.contact__content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.contact__content__header h2 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgb(0, 117, 255);
+}
+
+.contact__content__header p {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.contact__touch {
+  background-color: rgb(0, 117, 255);
+  color: rgb(255, 255, 255);
+  border: 2.5px solid rgb(0, 4, 20);
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+}
+
+.contact__touch:hover {
+  border: 2.5px solid rgb(0, 117, 255);
+  background-color: rgb(0, 4, 20);
+}
+
+.contact__touch:active {
+  transform: scale(0.95);
+}
+
+.contact__port {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 117, 255);
+  border: 2.5px solid rgb(0, 4, 20);
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 1.25rem;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.contact__port:hover {
+  border: 2.5px solid rgb(255, 255, 255);
+  background-color: rgb(0, 4, 20);
+}
+
+.contact__port:active {
+  transform: scale(0.95);
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

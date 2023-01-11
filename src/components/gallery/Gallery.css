@@ -89,6 +89,10 @@
   width: 100%;
   height: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: none;
 }
 
 .gallery__content__projects__project__data {
@@ -100,15 +104,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.gallery__content__projects__project__data h2 {
-  font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: var(--light);
-  margin-bottom: 0.25rem;
-  cursor: default;
+  border-top: none;
+  border-left: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .gallery__content__projects__project__data a {
@@ -134,4 +133,68 @@
 
 .gallery__content__projects__project__data a:active {
   transform: scale(0.95);
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery__content__projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gallery__content__projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gallery__nav {
+    justify-content: space-evenly;
+    font-size: 1rem;
+  }
+
+  .gallery__nav .gallery__nav__link:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .gallery {
+    padding: 1.5rem;
+  }
+
+  .gallery__content__projects {
+    margin-top: 1.5rem;
+  }
+
+  .gallery__content__header p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .gallery__content__header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .gallery__nav {
+    justify-content: space-evenly;
+    font-size: 0.75rem;
+  }
+
+  .gallery__content__projects__project__data {
+    padding: 0.5rem 0;
+  }
+
+  .gallery__content__projects__project__data a {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .gallery__content__header p {
+    margin-top: 1rem;
+  }
 }

@@ -3,8 +3,30 @@
     {
       "name": "3D Cube",
       "img": "https://i.imgur.com/RFwSPYs.png",
-      "alt": "The image for the 3D Cube project",
+      "alt": "The image for the 3D Cube",
+      "target": "_blank",
       "link": "https://arg-virtual-gallery.netlify.app/gallery/project-cube"
+    },
+    {
+      "name": "3D Card Hover Effect",
+      "img": "https://i.imgur.com/57Fj0Ij.png",
+      "alt": "The image for the 3D Card Hover Effect",
+      "target": "_self",
+      "link": "/gallery/card-hover-3d"
+    },
+    {
+      "name": "Waves Effect",
+      "img": "https://i.imgur.com/nhyNT6V.png",
+      "alt": "The image for the Waves Effect",
+      "target": "_self",
+      "link": "/gallery/waves-effect"
+    },
+    {
+      "name": "Text Side to Side Effect",
+      "img": "https://i.imgur.com/j2MSC3P.png",
+      "alt": "The image for the text side to side effect",
+      "target": "_self",
+      "link": "/gallery/text-side-to-side"
     }
   ]
 }

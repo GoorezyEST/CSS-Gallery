@@ -64,6 +64,7 @@
 .home__content__slogan p {
   font-size: 3.5rem;
   font-family: "Poppins", sans-serif;
+  width: 60%;
   font-weight: 500;
   color: var(--white);
   cursor: default;
@@ -72,7 +73,7 @@
 .home__content__button {
   background-color: var(--light);
   color: var(--white);
-  border: 2.5px solid rgb(0, 4, 20);
+  border: 2.5px solid var(--dark);
   padding: 0.75rem 1.25rem;
   font-size: 1.25rem;
   font-weight: 800;
@@ -84,9 +85,87 @@
 
 .home__content__button:hover {
   border: 2.5px solid var(--light);
-  background-color: rgb(0, 4, 20);
+  background-color: var(--dark);
 }
 
 .home__content__button:active {
   transform: scale(0.95);
+}
+
+@media screen and (max-width: 900px) {
+  .home__content__slogan p {
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 60%;
+    color: var(--white);
+    cursor: default;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home__nav {
+    justify-content: space-evenly;
+    font-size: 1rem;
+  }
+
+  .home__nav .home__nav__link:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .home {
+    padding: 1.5rem;
+  }
+
+  .home__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .home__content__header p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .home__content__header h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .home__content__slogan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home__content__slogan p {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    color: var(--white);
+    cursor: default;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .home__nav {
+    justify-content: space-evenly;
+    font-size: 0.75rem;
+  }
+
+  .home__content__slogan p {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    cursor: default;
+  }
 }

@@ -112,3 +112,47 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 700px) {
+  .contact__nav {
+    justify-content: space-evenly;
+    font-size: 1rem;
+  }
+
+  .contact__nav .contact__nav__link:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .contact {
+    padding: 1.5rem;
+  }
+
+  .contact__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .contact__content__header p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contact__content__header h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .contact__links {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .contact__nav {
+    justify-content: space-evenly;
+    font-size: 0.75rem;
+  }
+}

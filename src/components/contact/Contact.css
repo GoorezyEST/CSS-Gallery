@@ -1,7 +1,7 @@
 .contact {
   min-height: 100vh;
   max-height: 100vh;
-  background-color: rgb(0, 4, 20);
+  background-color: var(--dark);
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
@@ -23,14 +23,14 @@
 
 .contact__nav__link {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .contact__nav__link:hover {
-  color: rgb(0, 117, 255);
+  color: var(--light);
 }
 
 .contact__nav__link:active {
@@ -49,20 +49,22 @@
   font-size: 3.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: rgb(0, 117, 255);
+  color: var(--light);
+  cursor: default;
 }
 
 .contact__content__header p {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: rgb(255, 255, 255);
+  color: var(--white);
+  cursor: default;
 }
 
 .contact__touch {
-  background-color: rgb(0, 117, 255);
-  color: rgb(255, 255, 255);
-  border: 2.5px solid rgb(0, 4, 20);
+  background-color: var(--light);
+  color: var(--white);
+  border: 2.5px solid var(--dark);
   padding: 0.75rem 1.25rem;
   font-size: 1.25rem;
   font-weight: 800;
@@ -74,8 +76,8 @@
 }
 
 .contact__touch:hover {
-  border: 2.5px solid rgb(0, 117, 255);
-  background-color: rgb(0, 4, 20);
+  border: 2.5px solid var(--light);
+  background-color: var(--dark);
 }
 
 .contact__touch:active {
@@ -83,9 +85,9 @@
 }
 
 .contact__port {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 117, 255);
-  border: 2.5px solid rgb(0, 4, 20);
+  background-color: var(--white);
+  color: var(--light);
+  border: 2.5px solid var(--dark);
   padding: 0.75rem 1.25rem;
   font-size: 1.25rem;
   font-weight: 800;
@@ -97,8 +99,8 @@
 }
 
 .contact__port:hover {
-  border: 2.5px solid rgb(255, 255, 255);
-  background-color: rgb(0, 4, 20);
+  border: 2.5px solid var(--white);
+  background-color: var(--dark);
 }
 
 .contact__port:active {

@@ -26,7 +26,12 @@ function Gallery() {
           {projects.items.map((item, index) => (
             <div key={index} className="gallery__content__projects__project">
               <img src={item.img} alt={item.alt} />
-              <h2>{item.name}</h2>
+              <div className="gallery__content__projects__project__data">
+                <h2>{item.name}</h2>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  Go!
+                </a>
+              </div>
             </div>
           ))}
         </div>

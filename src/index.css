@@ -4,3 +4,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --white: rgb(255, 255, 255);
+  --light: rgb(0, 117, 255);
+  --dark: rgb(0, 4, 20);
+}
+
+/*
+--white: rgb(255, 255, 255);
+--light: rgb(0, 117, 255);
+--dark: rgb(0, 4, 20);
+*/

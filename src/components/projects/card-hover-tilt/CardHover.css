@@ -64,6 +64,9 @@
   padding: 0.75rem;
   border-radius: 1rem;
   color: rgb(255, 255, 255);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .over {
   width: 33.333%;

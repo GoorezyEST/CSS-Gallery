@@ -1,16 +1,34 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Gallery.css";
 import projects from "../../projects.json";
 import { useTranslation } from "react-i18next";
+import Spinner from "../spinner/Spinner";
 
 function Gallery() {
   const { t } = useTranslation();
 
+  const [loading, setLoading] = useState(true);
+
+  const images = projects.items.map((item) => item.img);
+  useEffect(() => {
+    const imageElements = images.map((img) => new Image());
+    let imagesLoaded = 0;
+    imageElements.forEach((image, i) => {
+      image.src = images[i];
+      image.onload = () => {
+        imagesLoaded++;
+        if (imagesLoaded === images.length) {
+          setLoading(false);
+        }
+      };
+    });
+  }, [images]);
+
   return (
     <section className="gallery">
       <nav className="gallery__nav">
-        <Link exact="true" to="/" className="gallery__nav__link">
+        <Link exact to="/" className="gallery__nav__link">
           {t("nav_home")}
         </Link>
         <Link to="/gallery" className="gallery__nav__link">
@@ -28,7 +46,18 @@ function Gallery() {
           <p>{t("gallery_subtitle")}</p>
           <h2>{t("gallery_title")}</h2>
         </div>
-        <div className="gallery__content__projects">
+        {loading && (
+          <div className="spinner">
+            <Spinner />
+          </div>
+        )}
+        <div
+          className="gallery__content__projects"
+          style={{
+            visibility: loading ? "hidden" : "visible",
+            width: loading ? "0px" : "100%",
+          }}
+        >
           {projects.items.map((item, index) => (
             <div key={index} className="gallery__content__projects__project">
               <img src={item.img} alt={item.alt} />

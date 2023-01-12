@@ -8,6 +8,7 @@ import Settings from "./components/settings/Settings";
 import CardHover from "./components/projects/card-hover-tilt/CardHover";
 import Waves from "./components/projects/waves/Waves";
 import TextSideSide from "./components/projects/text-side-to-side/TextSideSide";
+import Spinner from "./components/spinner/Spinner";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/gallery/card-hover-3d" element={<CardHover />} />
         <Route path="/gallery/waves-effect" element={<Waves />} />
         <Route path="/gallery/text-side-to-side" element={<TextSideSide />} />
+        <Route path="/loading" element={<Spinner />} />
       </Routes>
     </BrowserRouter>
   );

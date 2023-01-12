@@ -95,6 +95,23 @@
   border-bottom: none;
 }
 
+.loadingImgs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .gallery__content__projects__project__data {
   background-color: var(--white);
   width: 100%;

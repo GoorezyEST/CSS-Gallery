@@ -1,15 +1,15 @@
 export function colorBlue() {
-  document.documentElement.style.setProperty("--light", "rgb(0, 117, 255)");
+  document.documentElement.style.setProperty("--light", "RGB(17,138,178)");
 }
 
 export function colorRed() {
-  document.documentElement.style.setProperty("--light", "rgb(255, 30, 0)");
+  document.documentElement.style.setProperty("--light", "RGB(239,71,111)");
 }
 
-export function colorPurple() {
-  document.documentElement.style.setProperty("--light", "rgb(125, 0, 241)");
+export function colorYellow() {
+  document.documentElement.style.setProperty("--light", "RGB(212, 175, 55)");
 }
 
 export function colorGreen() {
-  document.documentElement.style.setProperty("--light", "rgb(0, 216, 11)");
+  document.documentElement.style.setProperty("--light", "RGB(6,214,160)");
 }

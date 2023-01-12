@@ -1,9 +1,9 @@
 import { React, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./Gallery.css";
 import projects from "../../projects.json";
 import { useTranslation } from "react-i18next";
 import Spinner from "../spinner/Spinner";
+import Nav from "../nav/Nav";
 
 function Gallery() {
   const { t } = useTranslation();
@@ -27,20 +27,7 @@ function Gallery() {
 
   return (
     <section className="gallery">
-      <nav className="gallery__nav">
-        <Link exact to="/" className="gallery__nav__link">
-          {t("nav_home")}
-        </Link>
-        <Link to="/gallery" className="gallery__nav__link">
-          {t("nav_css")}
-        </Link>
-        <Link to="/contact" className="gallery__nav__link">
-          {t("nav_contact")}
-        </Link>
-        <Link to="/settings" className="gallery__nav__link">
-          {t("nav_settings")}
-        </Link>
-      </nav>
+      <Nav />
       <div className="gallery__content">
         <div className="gallery__content__header">
           <p>{t("gallery_subtitle")}</p>

@@ -1,36 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Settings.css";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
 import {
   colorBlue,
   colorGreen,
-  colorPurple,
+  colorYellow,
   colorRed,
 } from "../../utilities/colors";
+import { useSettings } from "../../utilities/SettingsContext";
+import Nav from "../nav/Nav";
 
 function Settings() {
   const { t, i18n } = useTranslation();
-  const [activeLng, setActiveLng] = useState("en");
-  const [activeColor, setActiveColor] = useState("b");
+  const { activeLng, setActiveLng, activeColor, setActiveColor } =
+    useSettings();
 
   return (
     <section className="settings">
-      <nav className="settings__nav">
-        <Link exact to="/" className="settings__nav__link">
-          {t("nav_home")}
-        </Link>
-        <Link to="/gallery" className="settings__nav__link">
-          {t("nav_css")}
-        </Link>
-        <Link to="/contact" className="settings__nav__link">
-          {t("nav_contact")}
-        </Link>
-        <Link to="/settings" className="settings__nav__link">
-          {t("nav_settings")}
-        </Link>
-      </nav>
+      <Nav />
       <div className="settings__content">
         <div className="settings__content__header">
           <p>{t("settings_subtitle")}</p>
@@ -79,7 +66,7 @@ function Settings() {
                 activeColor === "p" ? "color purple active" : "color purple"
               }
               onClick={() => {
-                colorPurple();
+                colorYellow();
                 setActiveColor("p");
               }}
             ></span>

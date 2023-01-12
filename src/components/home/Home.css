@@ -7,36 +7,6 @@
   flex-direction: column;
 }
 
-.home__nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-
-.home__nav .home__nav__link:not(:last-child) {
-  margin-right: 3.5rem;
-}
-
-.home__nav__link {
-  text-decoration: none;
-  color: var(--white);
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.home__nav__link:hover {
-  color: var(--light);
-}
-
-.home__nav__link:active {
-  transform: scale(0.95);
-}
-
 .home__content {
   height: 100vh;
   display: flex;
@@ -104,15 +74,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .home__nav {
-    justify-content: space-evenly;
-    font-size: 1rem;
-  }
-
-  .home__nav .home__nav__link:not(:last-child) {
-    margin-right: 0;
-  }
-
   .home {
     padding: 1.5rem;
   }
@@ -154,11 +115,6 @@
 }
 
 @media screen and (max-width: 370px) {
-  .home__nav {
-    justify-content: space-evenly;
-    font-size: 0.75rem;
-  }
-
   .home__content__slogan p {
     font-size: 1rem;
     font-family: "Poppins", sans-serif;

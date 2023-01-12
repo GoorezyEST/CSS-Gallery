@@ -7,36 +7,6 @@
   flex-direction: column;
 }
 
-.contact__nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-
-.contact__nav .contact__nav__link:not(:last-child) {
-  margin-right: 3.5rem;
-}
-
-.contact__nav__link {
-  text-decoration: none;
-  color: var(--white);
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.contact__nav__link:hover {
-  color: var(--light);
-}
-
-.contact__nav__link:active {
-  transform: scale(0.95);
-}
-
 .contact__content {
   height: 100vh;
   display: flex;
@@ -114,15 +84,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .contact__nav {
-    justify-content: space-evenly;
-    font-size: 1rem;
-  }
-
-  .contact__nav .contact__nav__link:not(:last-child) {
-    margin-right: 0;
-  }
-
   .contact {
     padding: 1.5rem;
   }
@@ -147,12 +108,5 @@
 
   .contact__links {
     align-items: center;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .contact__nav {
-    justify-content: space-evenly;
-    font-size: 0.75rem;
   }
 }

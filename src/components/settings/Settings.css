@@ -7,36 +7,6 @@
   flex-direction: column;
 }
 
-.settings__nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-
-.settings__nav .settings__nav__link:not(:last-child) {
-  margin-right: 3.5rem;
-}
-
-.settings__nav__link {
-  text-decoration: none;
-  color: var(--white);
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.settings__nav__link:hover {
-  color: var(--light);
-}
-
-.settings__nav__link:active {
-  transform: scale(0.95);
-}
-
 .settings__content {
   height: 100vh;
   display: flex;
@@ -119,19 +89,19 @@
 }
 
 .blue {
-  background-color: rgb(0, 117, 255);
+  background-color: RGB(17, 138, 178);
 }
 
 .red {
-  background-color: rgb(255, 30, 0);
+  background-color: RGB(239, 71, 111);
 }
 
 .purple {
-  background-color: rgb(125, 0, 241);
+  background-color: RGB(212, 175, 55);
 }
 
 .green {
-  background-color: rgb(0, 216, 11);
+  background-color: RGB(6, 214, 160);
 }
 
 .active {
@@ -149,15 +119,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .settings__nav {
-    justify-content: space-evenly;
-    font-size: 1rem;
-  }
-
-  .settings__nav .settings__nav__link:not(:last-child) {
-    margin-right: 0;
-  }
-
   .settings {
     padding: 1.5rem;
   }
@@ -200,11 +161,6 @@
 }
 
 @media screen and (max-width: 370px) {
-  .settings__nav {
-    justify-content: space-evenly;
-    font-size: 0.75rem;
-  }
-
   .languages {
     width: 80%;
   }

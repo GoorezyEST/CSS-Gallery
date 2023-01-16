@@ -1,0 +1,90 @@
+.darkgoBack {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: rgba(0, 0, 0);
+  opacity: 0.5;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.darkgoBack:hover {
+  opacity: 1;
+}
+
+.darkgoBack:active {
+  transform: scale(0.95);
+}
+
+.btn_ripple_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.content button {
+  position: relative;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 3.75rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.content button:first-child {
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #8f94fb, #4e54c8);
+}
+
+.content button:nth-child(2) {
+  background: linear-gradient(45deg, #ed213a, #93291e);
+}
+
+.content button:last-child {
+  margin-top: 2rem;
+  background: linear-gradient(45deg, #ffaf7b, #d76d77, #3a1c71);
+}
+
+.content button > span {
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  pointer-events: none;
+  animation: ripples 0.6s linear infinite;
+}
+
+@keyframes ripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.4;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}

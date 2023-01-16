@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "name": "3D Cube",
-      "img": "https://i.imgur.com/RFwSPYs.png",
-      "alt": "The image for the 3D Cube",
-      "target": "_blank",
-      "link": "https://arg-virtual-gallery.netlify.app/gallery/project-cube"
-    },
-    {
       "name": "3D Card Hover Effect",
       "img": "https://i.imgur.com/57Fj0Ij.png",
       "alt": "The image for the 3D Card Hover Effect",
@@ -15,11 +8,25 @@
       "link": "/gallery/card-hover-3d"
     },
     {
-      "name": "Waves Effect",
-      "img": "https://i.imgur.com/nhyNT6V.png",
-      "alt": "The image for the Waves Effect",
+      "name": "Button Ripple",
+      "img": "https://i.imgur.com/jCfG1dK.png",
+      "alt": "The image for the Button Ripple",
       "target": "_self",
-      "link": "/gallery/waves-effect"
+      "link": "/gallery/btn-ripple"
+    },
+    {
+      "name": "Multi Words",
+      "img": "https://i.imgur.com/W1xrHnJ.png",
+      "alt": "The image for the Multi Words",
+      "target": "_self",
+      "link": "/gallery/multi-words"
+    },
+    {
+      "name": "3D Cube",
+      "img": "https://i.imgur.com/RFwSPYs.png",
+      "alt": "The image for the 3D Cube",
+      "target": "_blank",
+      "link": "https://arg-virtual-gallery.netlify.app/gallery/project-cube"
     },
     {
       "name": "Text Side to Side Effect",
@@ -27,6 +34,13 @@
       "alt": "The image for the text side to side effect",
       "target": "_self",
       "link": "/gallery/text-side-to-side"
+    },
+    {
+      "name": "Waves Effect",
+      "img": "https://i.imgur.com/nhyNT6V.png",
+      "alt": "The image for the Waves Effect",
+      "target": "_self",
+      "link": "/gallery/waves-effect"
     }
   ]
 }

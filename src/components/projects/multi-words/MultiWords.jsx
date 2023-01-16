@@ -11,11 +11,11 @@ function MultiWords() {
       <div className="multi_content">
         <p>CSS</p>
         <div className="multi_words">
-          <span>Gallery</span>
-          <span className="gal-one">Gallery</span>
-          <span className="gal-two">Gallery</span>
-          <span className="gal-three">Gallery</span>
-          <span>Gallery</span>
+          <span className="wordAnim">Gallery</span>
+          <span className="gal-one wordAnim">Gallery</span>
+          <span className="gal-two wordAnim">Gallery</span>
+          <span className="gal-three wordAnim">Gallery</span>
+          <span className="wordAnim">Gallery</span>
         </div>
       </div>
     </section>

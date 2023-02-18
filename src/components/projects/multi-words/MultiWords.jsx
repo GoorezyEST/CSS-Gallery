@@ -1,13 +1,11 @@
 import React from "react";
 import "./MultiWords.css";
-import { Link } from "react-router-dom";
+import Return from "../../returnBtn/Return";
 
 function MultiWords() {
   return (
     <section className="multi_container">
-      <Link to="../gallery" className="darkgoBack">
-        Return
-      </Link>
+      <Return />
       <div className="multi_content">
         <p>CSS</p>
         <div className="multi_words">

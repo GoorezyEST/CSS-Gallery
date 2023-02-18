@@ -1,6 +1,6 @@
 import React from "react";
 import "./BtnRipple.css";
-import { Link } from "react-router-dom";
+import Return from "../../returnBtn/Return";
 
 function BtnRipple() {
   function rippleFunctionality(e) {
@@ -17,9 +17,7 @@ function BtnRipple() {
 
   return (
     <section className="btn_ripple_container">
-      <Link to="../gallery" className="darkgoBack">
-        Return
-      </Link>
+      <Return />
       <div className="content">
         <button onClick={(e) => rippleFunctionality(e)}>Click</button>
         <button onClick={(e) => rippleFunctionality(e)}>Click</button>

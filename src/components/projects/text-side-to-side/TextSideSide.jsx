@@ -1,13 +1,11 @@
 import React from "react";
 import "./TextSideSide.css";
-import { Link } from "react-router-dom";
+import Return from "../../returnBtn/Return";
 
 function TextSideSide() {
   return (
     <section className="text_container">
-      <Link to="../gallery" className="goBack">
-        Return
-      </Link>
+      <Return />
       <div class="middle">
         <span class="text_backupcolor">
           <div class="text" data-text="TEXT">

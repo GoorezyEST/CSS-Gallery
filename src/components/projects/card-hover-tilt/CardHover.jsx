@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./CardHover.css";
+import Return from "../../returnBtn/Return";
 
 function CardHover() {
   return (
     <section className="container">
-      <Link to="../gallery" className="goBack">
-        Return
-      </Link>
+      <Return />
       <div class="card">
         <div class="card-box-wrap">
           <span class="over"></span>

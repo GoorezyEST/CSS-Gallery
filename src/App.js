@@ -11,6 +11,7 @@ import Waves from "./components/projects/waves/Waves";
 import TextSideSide from "./components/projects/text-side-to-side/TextSideSide";
 import BtnRipple from "./components/projects/btn-ripple/BtnRipple";
 import MultiWords from "./components/projects/multi-words/MultiWords";
+import Hearth from "./components/projects/hearth/Hearth";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/gallery/text-side-to-side" element={<TextSideSide />} />
         <Route path="/gallery/btn-ripple" element={<BtnRipple />} />
         <Route path="/gallery/multi-words" element={<MultiWords />} />
+        <Route path="/gallery/hearth-pulse" element={<Hearth />} />
         <Route path="/loading" element={<Spinner />} />
       </Routes>
     </BrowserRouter>

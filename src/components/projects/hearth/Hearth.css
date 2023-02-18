@@ -1,0 +1,54 @@
+.hearth_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(49, 9, 28);
+}
+
+.hearth {
+  height: 80px;
+  width: 80px;
+  background-color: rgb(221, 39, 124);
+  position: relative;
+  transform: rotate(45deg);
+  box-shadow: -10px 10px 90px rgb(221, 39, 124);
+  animation: pulse 1.05s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(-45deg) scale(1.075);
+  }
+  70% {
+    transform: rotate(-45deg) scale(1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1.075);
+  }
+}
+
+.hearth::before {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(221, 39, 124);
+  top: -40px;
+  border-radius: 50px;
+  box-shadow: -10px 10px 90px rgb(221, 39, 124);
+}
+
+.hearth::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(221, 39, 124);
+  right: -40px;
+  border-radius: 50px;
+  box-shadow: -10px 10px 90px rgb(221, 39, 124);
+}

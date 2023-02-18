@@ -1,7 +1,14 @@
 {
   "items": [
     {
-      "name": "3D Card Hover Effect",
+      "name": "Hearth Pulse",
+      "img": "https://i.imgur.com/5NCBwjt.png",
+      "alt": "The image for the Hearth Pulse",
+      "target": "_self",
+      "link": "/gallery/hearth-pulse"
+    },
+    {
+      "name": "3D Card",
       "img": "https://i.imgur.com/57Fj0Ij.png",
       "alt": "The image for the 3D Card Hover Effect",
       "target": "_self",
@@ -15,28 +22,21 @@
       "link": "/gallery/btn-ripple"
     },
     {
-      "name": "Multi Words",
+      "name": "Multi-Words",
       "img": "https://i.imgur.com/W1xrHnJ.png",
       "alt": "The image for the Multi Words",
       "target": "_self",
       "link": "/gallery/multi-words"
     },
     {
-      "name": "3D Cube",
-      "img": "https://i.imgur.com/RFwSPYs.png",
-      "alt": "The image for the 3D Cube",
-      "target": "_blank",
-      "link": "https://arg-virtual-gallery.netlify.app/gallery/project-cube"
-    },
-    {
-      "name": "Text Side to Side Effect",
+      "name": "Side to Side",
       "img": "https://i.imgur.com/EdeKDHN.png",
       "alt": "The image for the text side to side effect",
       "target": "_self",
       "link": "/gallery/text-side-to-side"
     },
     {
-      "name": "Waves Effect",
+      "name": "Waves",
       "img": "https://i.imgur.com/nhyNT6V.png",
       "alt": "The image for the Waves Effect",
       "target": "_self",

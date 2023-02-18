@@ -1,0 +1,18 @@
+.return_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.return_icon {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--light);
+  margin: 0.25rem 0 0 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.return_icon:active {
+  transform: scale(0.9);
+}

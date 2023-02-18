@@ -1,13 +1,11 @@
 import React from "react";
 import "./Waves.css";
-import { Link } from "react-router-dom";
+import Return from "../../returnBtn/Return";
 
 function Waves() {
   return (
     <section className="wavescontainer">
-      <Link to="../gallery" className="goBack">
-        Return
-      </Link>
+      <Return />
       <div class="water"></div>
     </section>
   );

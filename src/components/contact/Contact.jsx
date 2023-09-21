@@ -25,7 +25,7 @@ function Contact() {
           </a>
           <a
             className="contact__port"
-            href="https://goorezy-portfolio.netlify.app/#contact"
+            href="https://franco-espinosa-portafolio.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
